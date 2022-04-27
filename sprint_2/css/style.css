@@ -5,34 +5,7 @@ body{
 #boxPrincipal{
     
     width: 1024px;
-    
-}
-
-#main{
-    display: flex;
-    
-}
-
-section{
-    width: 512px;
-    height: 500px;
-    background-color: white;
-    font-family: sans-serif;
-    
-}
-
-#info{
-    background-color: #F7D0AB;
-    
-}
-
-section a{
-    text-decoration: none;
-}
-
-a{
-    color: black;
-    margin: 30px;
+    margin: 0px auto;
     
 }
 
@@ -51,6 +24,69 @@ img{
 
 header nav a{
     justify-content: space-around;
+    text-decoration: none;
+}
+
+#main{
+    display: flex;
+    
+}
+
+section{
+    width: 512px;
+    height: 500px;
+    background-color: white;
+    font-family: sans-serif;
+    
+}
+
+#info{
+    background-color: #F7D0AB;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#info h2{
+    font-size: 25px;
+    height: 20px;
+}
+
+#info p{
+    font-size: 25px;
+    height: 20px;
+}
+
+.button{
+    padding: 12px 12px;
+    border-radius: 25px;
+    background-color: rgb(212, 52, 52);
+    color: white;
+    
+}
+
+section a{
+    text-decoration: none;
+}
+
+a{
+    color: black;
+    margin: 30px;
+    
+}
+
+#login{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+input{
+    margin: 10px 10px;
+    background-color: gray;
+    padding: 10px 15px;
+    border-radius: 10px;
+
 }
 
 footer{
