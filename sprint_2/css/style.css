@@ -18,7 +18,7 @@ header{
 
 }
 
-img{
+#logo{
     margin: 20px;
 }
 
@@ -65,7 +65,11 @@ section{
     
 }
 
-section a{
+.button:hover{
+    background-color: rgb(255, 64, 64);
+}
+
+#info a{
     text-decoration: none;
 }
 
@@ -81,12 +85,29 @@ a{
     justify-content: center;
     align-items: center;
 }
+
+#mover{
+    background-color: none;
+    height: 14px;
+    width: 1px;
+}
 input{
     margin: 10px 10px;
-    background-color: gray;
+    background-color: #C4C4C4;
     padding: 10px 15px;
     border-radius: 10px;
+    border: none;
+}
 
+#login .button{
+    padding: 12px 52px;
+    border-radius: 25px;
+}
+
+#login a{
+    font-size: 12px;
+    margin: 0px;
+    padding: 0px
 }
 
 footer{
