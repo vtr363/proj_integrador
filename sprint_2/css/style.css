@@ -1,3 +1,6 @@
+@charset "UTF-8";
+/*cabeçalho e rodape da pagina
+trecho compartilhado entre todas */
 body{
     align-items: center;
 }
@@ -27,7 +30,20 @@ header nav a{
     text-decoration: none;
 }
 
-#main{
+footer{
+    height: 50px;
+    background-color: #C4C4C4;
+    display: flex;
+    align-items: center;
+}
+
+a{
+    color: black;
+    margin: 30px;
+    
+}
+/*pagina de login*/
+#mainLogin{
     display: flex;
     
 }
@@ -62,7 +78,7 @@ section{
     border-radius: 25px;
     background-color: rgb(212, 52, 52);
     color: white;
-    
+    border: none;
 }
 
 .button:hover{
@@ -73,11 +89,7 @@ section{
     text-decoration: none;
 }
 
-a{
-    color: black;
-    margin: 30px;
-    
-}
+
 
 #login{
     display:flex;
@@ -91,7 +103,14 @@ a{
     height: 14px;
     width: 1px;
 }
-input{
+#login form{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+#login .input{
     margin: 10px 10px;
     background-color: #C4C4C4;
     padding: 10px 15px;
@@ -101,7 +120,6 @@ input{
 
 #login .button{
     padding: 12px 52px;
-    border-radius: 25px;
 }
 
 #login a{
@@ -110,10 +128,42 @@ input{
     padding: 0px
 }
 
-footer{
-    height: 50px;
-    background-color: #C4C4C4;
+/* Pagina de consulta*/
+
+mainConsulta{
     display: flex;
-    align-items: center;
 }
 
+#pesquisa input{
+    border-radius: 12px;
+    border: none;
+    height: 40px;
+    background-color: rgb(212, 52, 52);
+    margin: 10px;
+}
+
+#pesquisa #barrap{
+    margin-right: 0px;
+    margin-left: 20px;
+    width: 400px;
+}
+
+#pesquisa #p{
+    background-color: aqua;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 0px;
+}
+
+#pesquisa #f{
+    background-color: rgb(253, 101, 0);
+    width: 75px;
+    margin-left: 50px;
+}
+
+#mostra .processo{
+    height: 40px;
+    width: 650px;
+    background-color: grey;
+    margin: 20px 20px;
+    border-radius: 12px;
+}
