@@ -171,12 +171,16 @@ section{
     margin: 40px 20px;
     border-radius: 12px;
 }
-
+/* menu de filtros*/
 #filtro{
-    background-color: rgb(255, 118, 69);
+    background-color: rgb(238, 122, 81);
     width: 333px;
     height: auto;
-    
+}
+
+#header{
+    display: flex;
+    justify-content: space-between;
 }
 
 #filtros input{
@@ -184,4 +188,23 @@ section{
     background-color: gray;
     border-radius: 10px;
     border: none;
+}
+
+#header #X{
+    background-color: red;
+    border: none;
+    border-radius: 4px;
+    height: 18px;
+}
+
+#periodo{
+    display: flex;
+}
+
+#de{
+
+}
+
+#ate{
+
 }
