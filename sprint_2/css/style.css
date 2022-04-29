@@ -138,14 +138,14 @@ section{
     border-radius: 12px;
     border: none;
     height: 40px;
-    background-color: rgb(212, 52, 52);
+    background-color: rgb(208, 86, 86);
     margin: 10px;
 }
 
 #pesquisa #barrap{
     margin-right: 0px;
     margin-left: 20px;
-    width: 400px;
+    width: 550px;
 }
 
 #pesquisa #p{
@@ -173,9 +173,15 @@ section{
 }
 
 #filtro{
-    background-color: orangered;
+    background-color: rgb(255, 118, 69);
     width: 333px;
     height: auto;
     
 }
 
+#filtros input{
+    margin: 10px;
+    background-color: gray;
+    border-radius: 10px;
+    border: none;
+}
