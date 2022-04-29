@@ -130,7 +130,7 @@ section{
 
 /* Pagina de consulta*/
 
-mainConsulta{
+#mainConsulta{
     display: flex;
 }
 
@@ -160,10 +160,22 @@ mainConsulta{
     margin-left: 50px;
 }
 
+#p:hover{
+    background-color: rgb(5, 197, 197);
+}
+
 #mostra .processo{
     height: 40px;
     width: 650px;
     background-color: grey;
-    margin: 20px 20px;
+    margin: 40px 20px;
     border-radius: 12px;
 }
+
+#filtro{
+    background-color: orangered;
+    width: 333px;
+    height: auto;
+    
+}
+
