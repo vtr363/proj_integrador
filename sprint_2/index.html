@@ -28,11 +28,13 @@
                     </form>
                 </section>
                 <section id="login">
-                        <! entrada de dados para login (DADOS SOMEM AO CLICAR NOVAMENTE) >
+                        <! entrada de dados para login >
                     <div id="mover"></div> 
                     <form action="consulta.html">
-                        <input class="input" type="text" onfocus=this.value='' value="user"/>
-                        <input class="input" type="password" onfocus=this.value='' value="senha"/>
+                        <input class="input" type="text" onfocus="if (this.value=='user') this.value = ''" onblur="if (this.value=='') this.value = 'user'" value="user"/>
+
+                        <input class="input" type="password" onfocus="if (this.value=='senha') this.value = ''" onblur="if (this.value=='') this.value = 'senha'" value="senha"/>
+
                         <input class="button" type="submit" value="Entrar"/>
                     </form>
                     <a href="">Esqueceu a senha?</a>
