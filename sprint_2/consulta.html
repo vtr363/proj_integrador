@@ -22,40 +22,45 @@
             <div id="mainConsulta">
                     <!Barra de pesquisa>
                 <div id="pesquisa">
-                    <form action="colsulta.html">
-                        <input id="barrap" type="text" onfocus="if (this.value=='Pesquise aqui') this.value = ''" onblur="if (this.value=='') this.value = 'Pesquise aqui'" value="Pesquise aqui">
-                        <input id="p" type="submit" value="🔍 Pesquisar"/>
-                    </form>
+                    <div class="header">
+                        <form action="colsulta.html">
+                            <input id="barrapSemFiltro" type="text" onfocus="if (this.value=='Pesquise aqui') this.value = ''" onblur="if (this.value=='') this.value = 'Pesquise aqui'" value="Pesquise aqui">
+                            <input id="p" type="submit" value="🔍 Pesquisar"/>
+                        </form>
+                        <form action="filtros.html">
+                            <input class="fbutton" type="submit" value="Filtrar"/>
+                        </form>
+                    </div>
                     <div id="mostra">
-                        <div class="processo">
+                        <div class="processoSemFiltro">
                             <p>Processo 001</p>
                             <p>Responsavel</p>
                             <p>Data: 00/00/00</p>
                             <p>Status</p>
                             <a href=""><img src="./img/olho.png" alt="img not found"></a>
                         </div>
-                        <div class="processo">
+                        <div class="processoSemFiltro">
                             <p>Processo 002</p>
                             <p>Responsavel</p>
                             <p>Data: 00/00/00</p>
                             <p>Status</p>
                             <a href=""><img src="./img/olho.png" alt="img not found"></a>
                         </div>
-                        <div class="processo">
+                        <div class="processoSemFiltro">
                             <p>Processo 003</p>
                             <p>Responsavel</p>
                             <p>Data: 00/00/00</p>
                             <p>Status</p>
                             <a href=""><img src="./img/olho.png" alt="img not found"></a>
                         </div>
-                        <div class="processo">
+                        <div class="processoSemFiltro">
                             <p>Processo 004</p>
                             <p>Responsavel</p>
                             <p>Data: 00/00/00</p>
                             <p>Status</p>
                             <a href=""><img src="./img/olho.png" alt="img not found"></a>
                         </div>
-                        <div class="processo">
+                        <div class="processoSemFiltro">
                             <p>Processo 005</p>
                             <p>Responsavel</p>
                             <p>Data: 00/00/00</p>
@@ -78,55 +83,6 @@
                             </nav>
                         </div>
                     </div>
-                </div>
-                    <!painel de filtros>
-                <div id="filtro">
-                    <div id="header">
-                        <h1>Filtros</h1>
-                        <form action="">
-                            <input id="X" type="button" value="X">
-                        </form>
-                    </div>
-                    <form id="filtros" action="">
-                        
-                        <label for="situação">Situação:</label>
-                        <input id="situação" type="text">
-                        
-                        <div id="periodo">
-                            <div>
-                                <label for="de">De:</label><br>
-                                <input type="date" id="de" >
-                            </div>
-                            <div>
-                                <label for="ate">Até:</label><br>
-                                <input type="date" id="ate">
-                            </div>
-                        </div>
-                        
-                        <label for="prioridade">Prioridade:</label>
-                        <input id="prioridade" type="text">
-                    
-                        <label for="unidade">Unidade:</label>
-                        <input id="unidade" type="text" onfocus="if (this.value=='Digite aqui') this.value = ''" onblur="if (this.value=='') this.value = 'Digite aqui'" value="Digite aqui">
-                    
-                        <label for="responsavel">Responsavel:</label>
-                        <input id="responsavel" type="text" onfocus="if(this.value=='Digite aqui') this.value = ''" onblur="if (this.value=='') this.value = 'Digite aqui'" value="Digite aqui">
-                    
-                        <label for="area">Área:</label>
-                        <input id="area" type="text" onfocus="if (this.value=='Digite aqui') this.value = ''" onblur="if (this.value=='') this.value = 'Digite aqui'" value="Digite aqui">
-                    
-                        <label for="nomePessoa">Nome da pessoa ou empresa:</label>
-                        <input id="nomePessoa" type="text" onfocus="if (this.value=='Digite aqui') this.value = ''" onblur="if (this.value=='') this.value = 'Digite aqui'" value="Digite aqui">
-                    
-                        <label for="numero">N do processo ou assunto:</label>
-                        <input id="numero" type="text" onfocus="if (this.value=='Digite aqui') this.value = ''" onblur="if (this.value=='') this.value = 'Digite aqui'" value="Digite aqui">
-                    
-                        <label for="nomeEscritorio">Nome do escritorio:</label>
-                        <input id="nomeEscritorio" type="text" onfocus="if (this.value=='Digite aqui') this.value = ''" onblur="if (this.value=='') this.value = 'Digite aqui'" value="Digite aqui">
-                        
-                        <input class="fbutton" type="submit" value="Filtrar">
-
-                     </form>
                 </div>
             </div>
             <footer>
