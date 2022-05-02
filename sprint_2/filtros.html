@@ -9,7 +9,7 @@
         <div id="boxPrincipal">
             <header>
                 <div id="logo">
-                    <img src="" alt="img not found">
+                    <img src="./img/logo.png" alt="img not found">
                 </div>
                 <nav>
                     <a href="">Item 1</a>
@@ -23,8 +23,8 @@
                     <!Barra de pesquisa>
                 <div id="pesquisa">
                     <form action="colsulta.html">
-                        <input id="barrap" type="text" onfocus="if (this.value=='Pesquise aqui') this.value = ''" onblur="if (this.value=='') this.value = 'Pesquise aqui'" value="Pesquise aqui">
-                        <input id="p" type="submit" value="🔍 Pesquisar"/>
+                        <input id="barrap" class="input" type="text" onfocus="if (this.value=='Pesquise aqui') this.value = ''" onblur="if (this.value=='') this.value = 'Pesquise aqui'" value="Pesquise aqui">
+                        <input id="p" class="input" type="submit" value="🔍 Pesquisar"/>
                     </form>
                     <div id="mostra">
                         <div class="processo">
@@ -90,39 +90,39 @@
                     <form id="filtros" action="filtros.html">
                         
                         <label for="situação">Situação:</label>
-                        <input id="situação" type="text">
+                        <input id="situação" class="input" type="text" onfocus="if(this.value=='Status') this.value = ''" onblur="if (this.value=='') this.value = 'Status'" value="Status">
                         
                         <div id="periodo">
                             <div>
-                                <label for="de">De:</label><br>
-                                <input type="date" id="de" >
+                                <label for="registro">Registro:</label><br>
+                                <input id="registro" class="input" type="date"  >
                             </div>
                             <div>
-                                <label for="ate">Até:</label><br>
-                                <input type="date" id="ate">
+                                <label for="prazo">Prazo:</label><br>
+                                <input id="prazo" class="input" type="date">
                             </div>
                         </div>
                         
                         <label for="prioridade">Prioridade:</label>
-                        <input id="prioridade" type="text">
+                        <input id="prioridade" class="input" type="text" onfocus="if(this.value=='Status de prioridade') this.value = ''" onblur="if (this.value=='') this.value = 'Status de prioridade'" value="Status de prioridade">
+                                        
+                        <label for="responsavel">Responsavel interno:</label>
+                        <input id="responsavel" class="input" type="text" onfocus="if(this.value=='Digite aqui') this.value = ''" onblur="if (this.value=='') this.value = 'Digite aqui'" value="Digite aqui">
                     
-                        <label for="unidade">Unidade:</label>
-                        <input id="unidade" type="text" onfocus="if (this.value=='Digite aqui') this.value = ''" onblur="if (this.value=='') this.value = 'Digite aqui'" value="Digite aqui">
+                        <label for="area">Área juridica:</label>
+                        <input id="area" class="input" type="text" onfocus="if (this.value=='Digite aqui') this.value = ''" onblur="if (this.value=='') this.value = 'Digite aqui'" value="Digite aqui">
                     
-                        <label for="responsavel">Responsavel:</label>
-                        <input id="responsavel" type="text" onfocus="if(this.value=='Digite aqui') this.value = ''" onblur="if (this.value=='') this.value = 'Digite aqui'" value="Digite aqui">
-                    
-                        <label for="area">Área:</label>
-                        <input id="area" type="text" onfocus="if (this.value=='Digite aqui') this.value = ''" onblur="if (this.value=='') this.value = 'Digite aqui'" value="Digite aqui">
-                    
-                        <label for="nomePessoa">Nome da pessoa ou empresa:</label>
-                        <input id="nomePessoa" type="text" onfocus="if (this.value=='Digite aqui') this.value = ''" onblur="if (this.value=='') this.value = 'Digite aqui'" value="Digite aqui">
+                        <label for="nome">Nome do solicitando:</label>
+                        <input id="nome" class="input" type="text" onfocus="if (this.value=='Digite aqui') this.value = ''" onblur="if (this.value=='') this.value = 'Digite aqui'" value="Digite aqui">
                     
                         <label for="numero">N do processo ou assunto:</label>
-                        <input id="numero" type="text" onfocus="if (this.value=='Digite aqui') this.value = ''" onblur="if (this.value=='') this.value = 'Digite aqui'" value="Digite aqui">
-                    
-                        <label for="nomeEscritorio">Nome do escritorio:</label>
-                        <input id="nomeEscritorio" type="text" onfocus="if (this.value=='Digite aqui') this.value = ''" onblur="if (this.value=='') this.value = 'Digite aqui'" value="Digite aqui">
+                        <input id="numero" class="input" type="text" onfocus="if (this.value=='Digite aqui') this.value = ''" onblur="if (this.value=='') this.value = 'Digite aqui'" value="Digite aqui">
+                        
+                        <label for="titulo">Título da solicitação:</label>
+                        <input id="titulo" class="input" type="text" onfocus="if (this.value=='Digite aqui') this.value = ''" onblur="if (this.value=='') this.value = 'Digite aqui'" value="Digite aqui">
+
+                        <label for="respoExterno">Responsavel externo</label>
+                        <input id="respoExterno" class="input" type="text" onfocus="if (this.value=='Digite aqui') this.value = ''" onblur="if (this.value=='') this.value = 'Digite aqui'" value="Digite aqui">
                         
                         <input class="fbutton" type="submit" value="Filtrar">
 

@@ -13,16 +13,19 @@ body{
 }
 
 header{
-    height: 50px;
+    
     background-color: #C4C4C4;
     display: flex;
     justify-content: space-between;
     align-items: center;
-
 }
 
 #logo{
-    margin: 20px;
+    margin: 5px;
+}
+
+#logo img{
+    width: 130px;
 }
 
 header nav a{
@@ -134,37 +137,38 @@ section{
     display: flex;
 }
 
-#pesquisa input{
+#pesquisa .input{
     border-radius: 12px;
     border: none;
     height: 40px;
     margin: 10px;
+    margin-right: 0px;
+    margin-left: 20px;
 }
 
 #pesquisa #barrap{
-    background-color: rgb(216, 97, 97);
+    background-color: #EE7070;
     margin-right: 0px;
     margin-left: 20px;
     width: 550px;
-    color: white;
+    color: black;
 }
 
 #barrapSemFiltro{
-    background-color: rgb(216, 97, 97);
-    margin-right: 0px;
-    margin-left: 20px;
+    background-color: #EE7070;
+    
     width: 650px;
-    color: white;
+    color: black;
 }
 
 #pesquisa #p{
-    background-color: #51d3f1;
+    background-color: #9DDEEC;
     font-family: Arial, Helvetica, sans-serif;
     margin-left: 0px;
 }
 
 #pesquisa #p:hover{
-    background-color: #86daed;
+    background-color: #51d3f1;
 }
 
 /* listagem de processos */
@@ -219,8 +223,11 @@ section{
 .navButton{
     background-color: #898989;
     color: black;
-    
+    border: none;
+    border-radius: 7px;
+    padding-top: 4px;
 }
+
 /* menu de filtros*/
 #filtro{
     background-color: #F7D0AB;
@@ -231,6 +238,7 @@ section{
 .header{
     display: flex;
     justify-content: space-around;
+    align-items: center;
 }
 
 #filtro .header h1{
@@ -238,15 +246,16 @@ section{
 }
 
 #filtro .header #X{
-    background-color: red;
+    background-color: #EE7070;
     border: none;
     border-radius: 4px;
     height: 18px;
     margin-left: 90px;
+    margin-bottom: 55px;
 }
 
 #filtro .header #X:hover{
-    background-color: rgb(221, 72, 72);
+    background-color: #f25252;
 }
 
 #filtros{
@@ -257,7 +266,7 @@ section{
     margin-right: 19px;
 }
 
-#filtros input{
+#filtros .input{
     margin-bottom: 10px;
     background-color: rgb(182, 182, 182);
     border-radius: 5px;
@@ -278,11 +287,14 @@ section{
 }
 
 .fbutton{
+    border: none;
     border-radius: 20px;
     background-color: rgb(235, 129, 58);
     width: 75px;
     margin-left: 115px;
     height: 35px;
+    margin-right: 53px;
+    margin-bottom: 10px;
 }
 
 .fbutton:hover{
