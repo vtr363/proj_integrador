@@ -30,11 +30,11 @@ header nav a{
     text-decoration: none;
     background-color: white;
     color: #9C9C9C;
-    text-shadow: black;
     padding: 5px;
     border-radius: 10px;
     font-family: "arial black";
-    font-size: 12px
+    font-size: 12px;
+    margin-left: 0px;
 }
 
 footer{
@@ -187,10 +187,27 @@ section{
     align-items: center;
 }
 
+.processoSemFiltro nav a{
+    text-decoration: none;
+    background-color: white;
+    color: #9C9C9C;
+    padding: 5px;
+    border-radius: 10px;
+    font-family: "arial black";
+    font-size: 12px;
+    margin: 0px;
+}
+
 .processo img{
     width: 33px;
     height: 26px;
     border-radius: 8px;
+    background-color: #9DDEEC;
+}
+
+
+.processo img:hover{
+    background-color: #51d3f1;
 }
 
 .processoSemFiltro{
@@ -209,6 +226,16 @@ section{
     width: 33px;
     height: 26px;
     border-radius: 8px;
+    background-color: #9DDEEC;
+    
+}
+
+.processoSemFiltro a{
+    margin: 0px;
+}
+
+.processoSemFiltro img:hover{
+    background-color: #51d3f1;
 }
 
 /* botoes de navegacao*/
