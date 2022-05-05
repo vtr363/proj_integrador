@@ -6,7 +6,9 @@ body{
 }
 
 #boxPrincipal{
-    width: 1024px;
+    min-width: 1180px;
+    max-width: 1850px;
+    width: 100%;
     margin: 0px auto;
 }
 /* cabeçalho*/
@@ -44,7 +46,7 @@ footer{
     align-items: center;
 }
 
-a{
+footer a{
     color: black;
     margin: 30px;
 }
@@ -138,23 +140,56 @@ section{
 
 #mainConsulta{
     display: flex;
+    
+}
+
+#pesquisa{
+    padding: 15px;
+    width: -moz-available;          
+    /* WebKit-based browsers will ignore this. */
+    width: -webkit-fill-available;  
+    /* Mozilla-based browsers will ignore this. */
+    
+}
+#tituloDaPagina{
+    color: #3A465C;
 }
 
 #pesquisa .input{
+    border-style: groove;
+    border-color: #9c9c9c4f;
     border-radius: 12px;
-    border: none;
     height: 40px;
     margin: 10px;
-    margin-right: 0px;
-    margin-left: 20px;
+    margin-left: 0px;
 }
 
-#pesquisa #barrap{
-    background-color: #EE7070;
+#pesquisa #barraPesquisa{
+    background-color: rgb(224, 224, 224);
     margin-right: 0px;
-    margin-left: 20px;
-    width: 550px;
-    color: black;
+    margin-left: 0px;
+    width: 427px;
+    color: #9C9C9C;
+    padding-bottom: 0px;
+    padding-top: 0px;
+}
+
+#classeNumero{
+    width: 160px;
+    height: 44px;
+    background-color: rgb(224, 224, 224);
+    margin-right: 10px;
+    margin-left: 0px;
+    color: #9C9C9C;
+}
+
+#classe{
+    height: 44px;
+    width: 100px;
+    background-color: rgb(224, 224, 224);
+    margin-right: 10px;
+    margin-left: 0px;
+    color: #9C9C9C;
 }
 
 #barrapSemFiltro{
@@ -164,28 +199,53 @@ section{
     color: black;
 }
 
-#pesquisa #p{
-    background-color: #F99D1C;
+#pesquisa #botaoPesquisa{
+    background-color: #4653CB;
     font-family: Arial, Helvetica, sans-serif;
+    margin-right: 0px;
     margin-left: 0px;
     color: white;
+    border-radius: 17px;
+    border: none;
+    width: 90px;
 }
 
-#pesquisa #p:hover{
-    background-color: #51d3f1;
+#pesquisa #botaoPesquisa:hover{
+    background-color: #5261e6;
 }
 
 /* listagem de processos */
 #mostra .processo{
-    height: 40px;
-    width: 650px;
-    background-color: #9c9c9c;
-    color: white;
-    margin: 40px 20px;
+    height: fit-content;
+    max-width: 1500px;
+    width: 100%;
+    margin: 40px 0px;
+    background-color: #E0E0E0;
+    color: black;
+    border-style: groove;
+    border-color: #9c9c9c57;
     border-radius: 5px;
     display: flex;
     justify-content: space-around;
     align-items: center;
+}
+
+.processo p{
+    margin: 5px;
+    text-align: center;
+}
+
+.processo .redireciona{
+    width: fit-content;
+    height: fit-content;
+    background-color: #F6BE00;
+    text-decoration: none;
+    justify-content: center;
+    padding: 3px;
+    padding-left: 5px;
+    padding-right: 5px;
+    border-radius: 16px;
+    text-align: center
 }
 
 .processoSemFiltro nav a{
@@ -199,10 +259,10 @@ section{
     margin: 0px;
 }
 
-var(img)
+
 
 .processo a{
-    width: 25px;
+    width: 32px;
     height: 25px;
 }
 
@@ -271,10 +331,11 @@ var(img)
 
 /* menu de filtros*/
 #filtro{
-    background-color: #114D95;
+    background-color: #3A465C;
     width: 333px;
     height: auto;
     color: white;
+    float: right;
 }
 
 .header{
@@ -283,20 +344,15 @@ var(img)
     align-items: center;
 }
 
-#filtro .header h1{
-    margin-left: 121px;
+#filtro .header #iconeFiltro{
+    height: 55px;
+    width: 55px;
+    margin-bottom: 15px;
 }
 
-#filtro .header #X{
-    border: none;
-    border-radius: 4px;
-    height: 18px;
-    margin-left: 90px;
-    margin-bottom: 55px;
-}
-
-#filtro .header #X:hover{
-    background-color: #f25252;
+#filtro .header .X img{
+    width: 30px;
+    height: 30px;
 }
 
 #filtros{
@@ -305,16 +361,17 @@ var(img)
     justify-content: space-around;
     margin-left: 10px;
     margin-right: 19px;
-
+    font-family: sans-serif;
 }
 
 #filtros .input{
-    margin-bottom: 10px;
+    margin-bottom: 20px;
     background-color: white;
-    border-radius: 5px;
+    color: #8f8884;
+    border-radius: 10px;
     border: none;
     margin-left: 0px;
-    width: 300px;
+    width: auto;
     height: 20px;
 }
 
@@ -331,7 +388,7 @@ var(img)
 .fbutton{
     border: none;
     border-radius: 14px;
-    background-color: #F99D1C;
+    background-color: #4653CB;
     width: 100px;
     margin-left: 115px;
     height: 35px;
@@ -341,6 +398,6 @@ var(img)
 }
 
 .fbutton:hover{
-    background-color: rgb(255, 134, 53);
+    background-color: #5261e6;
 }
 
