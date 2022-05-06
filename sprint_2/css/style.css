@@ -3,28 +3,64 @@
 trecho compartilhado entre todas */
 body{
     align-items: center;
+    font-family: sans-serif;
 }
 
 #boxPrincipal{
     min-width: 1180px;
-    max-width: 1850px;
+    max-width: 1400px;
     width: 100%;
     margin: 0px auto;
 }
 /* cabeçalho*/
-header{
-    background-color: #C4C4C4;
+#topHeader{
+    width: auto;
+    height: 30px;
+    background-color: #3A465C;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#topHeader h1{
+    margin-top: 18px;
+    color: white;
+}
+
+#topHeader img{
+    width: 25px;
+    height: 25px;
+}
+
+#topHeader a{
+    text-decoration: none;
+    color: white;
+}
+header #mainHeader{
+    background-color: #445a83;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
+#mainHeader input{
+    border: none;
+    border-radius: 20px;
+    width: 250px;
+    height: 30px;
+    margin-right: 30px;
+    color: #8f8884;
+    padding-left: 10px;
+}
+
 #logo{
-    margin: 5px;
+    margin: 25px;
+    margin-bottom: 35px;
+    margin-top: 50px;
 }
 
 #logo img{
-    width: 130px;
+    width: 255px;
 }
 
 header nav a{
@@ -149,8 +185,33 @@ section{
     /* WebKit-based browsers will ignore this. */
     width: -webkit-fill-available;  
     /* Mozilla-based browsers will ignore this. */
+}
+
+#pesquisa nav #top{
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    width: 750px;
+    padding-left: 0px;
+    font-size: 20px;
+    margin-bottom: 80px;
+}
+
+.navTop{
+    text-decoration: none;
+    color: black;
+    border-bottom: 3px solid #3A465C;
+}
+
+
+
+.navTop img{
+    padding-left: 5px;
+    width: 12px;
+    height: 12px;
     
 }
+
 #tituloDaPagina{
     color: #3A465C;
 }
@@ -162,6 +223,7 @@ section{
     height: 40px;
     margin: 10px;
     margin-left: 0px;
+    padding-left: 10px;
 }
 
 #pesquisa #barraPesquisa{
@@ -309,12 +371,14 @@ section{
 /* botoes de navegacao*/
 #navegacao nav{
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
     align-items: center;
 }
 
-#navegacao nav a{
-    margin: 16px;
+#navegacao nav ul{
+    list-style: none;
+    display: flex;
+    
 }
 
 .navButton{
@@ -322,11 +386,9 @@ section{
     color: black;
     border: none;
     text-decoration: none;
-    border-radius: 7px;
-    padding: 3px;
-    padding-bottom: 0px;
-    padding-right: 5px;
-    padding-top: 1px;
+    width: 25px;
+    height: 25px;
+    margin: 5px;
 }
 
 /* menu de filtros*/
@@ -373,10 +435,11 @@ section{
     margin-left: 0px;
     width: auto;
     height: 20px;
+    padding-left: 10px;
 }
 
 #filtros #periodo input{
-    width: 130px;
+    width: 125px;
 }
 
 #periodo{
@@ -390,9 +453,9 @@ section{
     border-radius: 14px;
     background-color: #4653CB;
     width: 100px;
-    margin-left: 115px;
+    margin-left: 96px;
     height: 35px;
-    margin-right: 53px;
+    margin-right: 78px;
     margin-bottom: 10px;
     color: white;
 }
