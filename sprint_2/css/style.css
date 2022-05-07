@@ -270,13 +270,6 @@ section{
     color: #9C9C9C;
 }
 
-#barrapSemFiltro{
-    background-color: #EE7070;
-    
-    width: 650px;
-    color: black;
-}
-
 #pesquisa #botaoPesquisa{
     background-color: #4653CB;
     font-family: Arial, Helvetica, sans-serif;
@@ -326,17 +319,6 @@ section{
     text-align: center
 }
 
-.processoSemFiltro nav a{
-    text-decoration: none;
-    background-color: white;
-    color: #9C9C9C;
-    padding: 5px;
-    border-radius: 10px;
-    font-family: "arial black";
-    font-size: 12px;
-    margin: 0px;
-}
-
 
 
 .processo a{
@@ -356,55 +338,53 @@ section{
     background-color: #1659ac;
 }
 
-.processoSemFiltro{
-    height: 40px;
-    width: 980px;
-    background-color: #9c9c9c;
-    color: white;
-    margin: 40px 20px;
-    border-radius: 5px;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-}
-
-.processoSemFiltro img{
-    width: 33px;
-    height: 26px;
-    border-radius: 8px;
-    background-color: #9DDEEC;
-    
-}
-
-.processoSemFiltro a{
-    margin: 0px;
-}
-
-.processoSemFiltro img:hover{
-    background-color: #51d3f1;
-}
-
 /* botoes de navegacao*/
-#navegacao nav{
+#navegacao {
     display: flex;
     justify-content: flex-end;
-    align-items: center;
+    height: 100px;
 }
 
-#navegacao nav ul{
+#navegacao ul {
     list-style: none;
     display: flex;
+    align-items: center;
     
 }
 
-.navButton{
-    background-color: #898989;
-    color: black;
-    border: none;
+#navegacao p{
+    margin: 0px;
+    font-size: 25px;
+    padding: 8px 2px;
+    color: #FF8E8E;
+}
+
+#navegacao a.active {
+    background-color: #3A465C;
+    color: white;
+  }
+
+#navegacao a:hover:not(.active) {
+    background-color: #ddd;
+}
+
+#navegacao a{
+    margin: 2px;
     text-decoration: none;
-    width: 25px;
-    height: 25px;
-    margin: 5px;
+    padding: 8px 16px;
+    color: #FF8E8E;
+    border-style: groove;
+    border-color: #4653cb77;
+    border-radius: 8px;
+}
+
+#setas{
+    color: black;
+    padding: 8px 13px;
+}
+
+#XX{
+    padding: 8px 10px;
 }
 
 /* menu de filtros*/
@@ -443,15 +423,16 @@ section{
 }
 
 #filtros .input{
-    margin-bottom: 20px;
     background-color: white;
     color: #8f8884;
     border-radius: 10px;
     border: none;
-    margin-left: 0px;
     width: auto;
-    height: 20px;
+    height: 25px;
     padding-left: 10px;
+    margin-bottom: 25px;
+    margin-top: 2px;
+    margin-left: 0px;
 }
 
 #filtros #periodo input{
