@@ -32,8 +32,7 @@
                 </div>
             </header>
                 <! Corpo da pagina de consulta>
-            <div id="mainConsulta">
-                    <!Barra de pesquisa>
+            <div class="flex">
                 <div id="pesquisa">
                     <nav>
                         <ul id="top">
@@ -60,15 +59,21 @@
                         </ul>
                     </nav>
                     <h1 id="tituloDaPagina">PROCESSOS:</h1>
-                    <form action="colsulta.html">
-                        <input id="classeNumero" class="input" type="text" value="Por Classe e Numero">
-                        <input id="classe" class="input" type="text" value="Por Classe ">
-                        <input id="barraPesquisa" class="input" type="text" 
-                            onfocus="if (this.value=='Digite o Número do processo (ex: 100)') this.value = ''" 
-                            onblur="if (this.value=='') this.value = 'Digite o Número do processo (ex: 100)'" 
-                            value="Digite o Número do processo (ex: 100)">
-                        <input id="botaoPesquisa" class="input" type="submit" value="Pesquisar"/>
-                    </form>
+                        <!Barra de pesquisa>
+                    <div class="flex">
+                        <form id="form" action="colsulta.html">
+                            <input id="classeNumero" class="input" type="text" value="Por Classe e Numero">
+                            <input id="classe" class="input" type="text" value="Por Classe ">
+                            <input id="barraPesquisa" class="input" type="text" 
+                                onfocus="if (this.value=='Digite o Número do processo (ex: 100)') this.value = ''" 
+                                onblur="if (this.value=='') this.value = 'Digite o Número do processo (ex: 100)'" 
+                                value="Digite o Número do processo (ex: 100)">
+                            <input id="botaoPesquisa" class="input" type="submit" value="Pesquisar"/>
+                        </form>
+                        <form action="filtrosADM.html">
+                            <input class="input" id="botaoFiltro" type="submit" value="Filtrar">
+                        </form>
+                    </div>
                     <div id="mostra">
                         <div class="processo">
                             <p>Processo 001</p>

@@ -7,7 +7,7 @@ body{
 }
 
 #boxPrincipal{
-    min-width: 1180px;
+    min-width: 1200px;
     max-width: 1400px;
     width: 100%;
     margin: 0px auto;
@@ -190,9 +190,9 @@ section{
 
 /* Pagina de consulta*/
 
-#mainConsulta{
+.flex{
     display: flex;
-    
+    justify-content: space-between;
 }
 
 #pesquisa{
@@ -203,7 +203,7 @@ section{
     /* Mozilla-based browsers will ignore this. */
 }
 
-#pesquisa nav #top{
+#pesquisa #top{
     list-style: none;
     display: flex;
     justify-content: space-around;
@@ -272,7 +272,6 @@ section{
 
 #pesquisa #botaoPesquisa{
     background-color: #4653CB;
-    font-family: Arial, Helvetica, sans-serif;
     margin-right: 0px;
     margin-left: 0px;
     color: white;
@@ -282,6 +281,20 @@ section{
 }
 
 #pesquisa #botaoPesquisa:hover{
+    background-color: #5261e6;
+}
+
+#pesquisa #botaoFiltro{
+    background-color: #4653CB;
+    margin-right: 100px;
+    margin-left: 0px;
+    color: white;
+    border-radius: 17px;
+    border: none;
+    width: 90px;
+}
+
+#pesquisa #botaoFiltro:hover{
     background-color: #5261e6;
 }
 
@@ -390,10 +403,11 @@ section{
 /* menu de filtros*/
 #filtro{
     background-color: #3A465C;
-    width: 333px;
     height: auto;
     color: white;
     float: right;
+    min-width: 300px;
+    max-width: 300px;
 }
 
 .header{
@@ -413,12 +427,12 @@ section{
     height: 30px;
 }
 
-#filtros{
+#filtros form{
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     margin-left: 10px;
-    margin-right: 19px;
+    margin-right: 10px;
     font-family: sans-serif;
 }
 
@@ -427,7 +441,11 @@ section{
     color: #8f8884;
     border-radius: 10px;
     border: none;
-    width: auto;
+    width: -moz-available;          
+    /* WebKit-based browsers will ignore this. */
+    width: -webkit-fill-available;  
+    /* Mozilla-based browsers will ignore this. */
+
     height: 25px;
     padding-left: 10px;
     margin-bottom: 25px;
@@ -449,15 +467,20 @@ section{
     border: none;
     border-radius: 14px;
     background-color: #4653CB;
+    align-self: center;
     width: 100px;
-    margin-left: 96px;
     height: 35px;
+    /*
+    margin-left: 96px;
     margin-right: 78px;
     margin-bottom: 10px;
+    */
     color: white;
 }
 
 .fbutton:hover{
     background-color: #5261e6;
 }
+
+
 
