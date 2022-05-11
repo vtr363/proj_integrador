@@ -4,6 +4,7 @@
         <meta charset="UTF-8"/>
         <title>Sistema jurídico</title>
         <link rel="stylesheet" type="text/css" href="./css/style.css"/>
+        <script language="javascript" src="./script/script.js"></script>
     </head>
     <body>
         <div id="boxPrincipal">
@@ -27,9 +28,7 @@
                     <a href="" id="logo">
                         <img src="./img/logo.png" alt="img not found">
                     </a>
-                    <input type="text" onfocus="if (this.value=='Pesquise aqui') this.value = ''" 
-                    onblur="if (this.value=='') this.value = 'Pesquise aqui'" 
-                    value="Pesquise aqui">
+                    <input type="text" placeholder="Pesquise aqui">
                 </div>
             </header>
                 <! Corpo da pagina de consulta>
@@ -62,12 +61,9 @@
                     </nav>
                     <h1 id="tituloDaPagina">PROCESSOS:</h1>
                     <form action="colsulta.html">
-                        <input id="classeNumero" class="input" type="text" value="Por Classe e Numero">
-                        <input id="classe" class="input" type="text" value="Por Classe ">
-                        <input id="barraPesquisa" class="input" type="text" 
-                            onfocus="if (this.value=='Digite o Número do processo (ex: 100)') this.value = ''" 
-                            onblur="if (this.value=='') this.value = 'Digite o Número do processo (ex: 100)'" 
-                            value="Digite o Número do processo (ex: 100)">
+                        <input id="classeNumero" class="input" type="text" placeholder="Por Classe e Numero">
+                        <input id="classe" class="input" type="text" placeholder="Por Classe ">
+                        <input id="barraPesquisa" class="input" type="text" placeholder="Digite o Número do processo (ex: 100)">
                         <input id="botaoPesquisa" class="input" type="submit" value="Pesquisar"/>
                     </form>
                     <div id="mostra">
@@ -161,7 +157,7 @@
                         <form action="filtros.html">
                             
                             <label for="situação">Situação</label>
-                            <input id="situação" class="input" type="text" onfocus="if(this.value=='Status') this.value = ''" onblur="if (this.value=='') this.value = 'Status'" value="Status">
+                            <input id="situação" class="input" type="text" placeholder="Status">
                             
                             <div id="periodo">
                                 <div>
@@ -175,25 +171,25 @@
                             </div>
                             
                             <label for="prioridade">Prioridade</label>
-                            <input id="prioridade" class="input" type="text" onfocus="if(this.value=='Status de prioridade') this.value = ''" onblur="if (this.value=='') this.value = 'Status de prioridade'" value="Status de prioridade">
+                            <input id="prioridade" class="input" type="text" placeholder="Status de prioridade">
                                             
                             <label for="responsavel">Responsável interno</label>
-                            <input id="responsavel" class="input" type="text" onfocus="if(this.value=='Digite aqui') this.value = ''" onblur="if (this.value=='') this.value = 'Digite aqui'" value="Digite aqui">
+                            <input id="responsavel" class="input" type="text" placeholder="Digite aqui">
                         
                             <label for="area">Área jurídica</label>
-                            <input id="area" class="input" type="text" onfocus="if (this.value=='Digite aqui') this.value = ''" onblur="if (this.value=='') this.value = 'Digite aqui'" value="Digite aqui">
+                            <input id="area" class="input" type="text" placeholder="Digite aqui">
                         
                             <label for="nome">Nome do solicitante</label>
-                            <input id="nome" class="input" type="text" onfocus="if (this.value=='Digite aqui') this.value = ''" onblur="if (this.value=='') this.value = 'Digite aqui'" value="Digite aqui">
+                            <input id="nome" class="input" type="text" placeholder="Digite aqui">
                         
                             <label for="numero">Número da solicitação</label>
-                            <input id="numero" class="input" type="text" onfocus="if (this.value=='Digite aqui') this.value = ''" onblur="if (this.value=='') this.value = 'Digite aqui'" value="Digite aqui">
+                            <input id="numero" class="input" type="text" placeholder="Digite aqui">
                             
                             <label for="titulo">Título da solicitação</label>
-                            <input id="titulo" class="input" type="text" onfocus="if (this.value=='Digite aqui') this.value = ''" onblur="if (this.value=='') this.value = 'Digite aqui'" value="Digite aqui">
+                            <input id="titulo" class="input" type="text" placeholder="Digite aqui">
 
                             <label for="respoExterno">Responsável externo</label>
-                            <input id="respoExterno" class="input" type="text" onfocus="if (this.value=='Digite aqui') this.value = ''" onblur="if (this.value=='') this.value = 'Digite aqui'" value="Digite aqui">
+                            <input id="respoExterno" class="input" type="text" placeholder="Digite aqui">
                             
                             <input class="fbutton" type="submit" value="Filtrar">
 
